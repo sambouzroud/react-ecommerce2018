@@ -1,0 +1,26 @@
+.content {
+  background-color: #F9F6F6;
+} 
+
+ .first-header {
+  background: url('https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg?cs=srgb&dl=classic-clothes-commerce-298863.jpg&fm=jpg');
+} 
+
+ .second-header {
+  background: url('https://images.pexels.com/photos/135620/pexels-photo-135620.jpeg?cs=srgb&dl=apparel-boutique-colors-135620.jpg&fm=jpg');
+} 
+
+ .third-header {
+  background: url('https://images.pexels.com/photos/291762/pexels-photo-291762.jpeg?cs=srgb&dl=adult-beautiful-clothes-291762.jpg&fm=jpg');
+} 
+
+ .fourth-header {
+  background: url('https://images.pexels.com/photos/371095/pexels-photo-371095.jpeg?cs=srgb&dl=classic-design-elegant-371095.jpg&fm=jpg');
+} 
+
+ .first-header, .second-header, .third-header, .fourth-header {
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
+}
