@@ -34,3 +34,8 @@ p a:hover {
   background: #FFF;
   transition: 0.5s;
 }
+.header h1
+{
+color: bold;
+background-color: rgb(166, 167, 146);
+}

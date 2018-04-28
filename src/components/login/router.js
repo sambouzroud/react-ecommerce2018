@@ -1,12 +1,12 @@
 var express = require('express');
 var router = express.Router();
-var User = require('../models/user');
+var User = require('./user');
 var path = require('path');
 
 
 // GET route for reading data
 router.get('/', function (req, res, next) {
-  return res.sendFile(path.join(__dirname + '/login/index.js'));
+  return res.sendFile(path.join(__dirname + '/login'));
 });
 
 
@@ -37,7 +37,7 @@ router.post('/', function (req, res, next) {
         return next(error);
       } else {
         req.session.userId = user._id;
-        return res.redirect('/profile');
+        return res.redirect('/login');
       }
     });
 
@@ -49,7 +49,7 @@ router.post('/', function (req, res, next) {
         return next(err);
       } else {
         req.session.userId = user._id;
-        return res.redirect('/profile');
+        return res.redirect('/login');
       }
     });
   } else {
@@ -60,7 +60,7 @@ router.post('/', function (req, res, next) {
 })
 
 // GET route after registering
-router.get('/profile', function (req, res, next) {
+router.get('/login', function (req, res, next) {
   User.findById(req.session.userId)
     .exec(function (error, user) {
       if (error) {
@@ -78,7 +78,7 @@ router.get('/profile', function (req, res, next) {
 });
 
 // GET for logout logout
-router.get('/logout', function (req, res, next) {
+router.get('/login', function (req, res, next) {
   if (req.session) {
     // delete session object
     req.session.destroy(function (err) {

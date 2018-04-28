@@ -22,7 +22,7 @@ class Navbar extends Component
         <li><NavLink activeClassName="selected" className="nav-link" exact to="/">Home</NavLink></li>
         <li><NavLink activeClassName="selected" className="nav-link" to="/women">Women</NavLink></li>
         <li><NavLink activeClassName="selected" className="nav-link" to="/men">Men</NavLink></li>
-        <li><NavLink activeClassName="selected" className="nav-link" to="/register">Register</NavLink></li>
+        
         <li><NavLink activeClassName="selected" className="nav-link" to="/login">Login</NavLink></li>
        
       </ul>

@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 
 import '../../index.css';
 
@@ -63,7 +63,8 @@ class Confirm extends Component {
                             <p></p>
                         }
 
-                        <button className="stripe-button">Submit Payment</button>
+                        <button className="stripe-button"><Link to="/checkout">Submit Payment</Link></button>
+                        
                     </div>
                 </div>
            

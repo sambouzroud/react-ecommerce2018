@@ -12,6 +12,7 @@ class Thanks extends Component {
             <div>
                 
                 <h2 className="thanks">Thank you for your purchase!</h2>
+                <i class="material-icons">thumb_up</i>
             </div>
 
         );

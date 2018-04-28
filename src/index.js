@@ -17,15 +17,14 @@ import Men from './components/Men';
 import Clothes from './components/Clothes';
 import Accessories from './components/Accessories';
 import ShowProduct from './components/ShowProduct';
-// import Thanks from './components/Thanks';
-// import register from './components/register';
-// import login from './components/login';
-// import routes from './routes/router';
-// import models from './models/user';
-// import checkout from './components/checkout';
+import Thanks from './components/Thanks';
+
+import login from './components/login';
+
+import checkout from './components/checkout';
 
 
-// import server from './server';
+
 
 
 import confirm from './components/confirm';
@@ -66,14 +65,13 @@ deleteFromCart(itemIndex)
             <Route path="/clothes" component={Clothes}  />
             <Route path="/accessories" component={() => <Accessories addItemToCart={this.addItemToCart}/>} /> />
             <Route exact path="/products/:id" component={ShowProduct} />
-            {/* <Route path="/register" component={register}  /> */}
-            {/* <Route path="/login" component={login}  /> */}
+            
+            <Route path="/login" component={login}  />
             
             <Route path="/confirm" component={confirm}  />
-            {/* <Route path="/Thanks" component={Thanks}  /> */}
-            {/* <Route path="/routes" component={routes}  />
-            <Route path="/models" component={models}  /> */}
-            {/* <Route path="/checkout" component={checkout}  /> */}
+            <Route path="/Thanks" component={Thanks}  />
+           
+            <Route path="/checkout" component={checkout}  />
             
           </Switch>
         </BaseLayout>
@@ -85,4 +83,4 @@ ReactDOM.render(
   <Main/>
 
 , document.getElementById('root'));
-// server();
+
